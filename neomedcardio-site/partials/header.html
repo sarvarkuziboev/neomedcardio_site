@@ -1,0 +1,53 @@
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__info">
+      <a href="tel:+998993070300" class="topbar__item">
+        <span class="icon" data-icon="phone" style="width:14px;height:14px" aria-hidden="true"></span>
+        +998 99 307 03 00
+      </a>
+      <span class="topbar__item topbar__item--hours" data-i18n="topbar.hours">Dush–Shan: 09:00–18:00</span>
+    </div>
+    <div class="topbar__emergency" data-i18n="topbar.emergency">Tez yordam: 24/7</div>
+  </div>
+</div>
+
+<header class="site-header" id="site-header-el">
+  <div class="container site-header__inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Neo Med Cardio" class="brand__logo" width="44" height="44">
+      <span class="brand__text">
+        <span class="brand__name">NEO MED<em>CARDIO</em></span>
+        <span class="brand__sub">Multidisciplinary Clinic</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" data-page="index" data-i18n="nav.home">Bosh sahifa</a>
+      <a href="xizmatlar.html" data-page="xizmatlar" data-i18n="nav.services">Xizmatlar</a>
+      <a href="shifokorlar.html" data-page="shifokorlar" data-i18n="nav.doctors">Shifokorlar</a>
+      <a href="kontaktlar.html" data-page="kontaktlar" data-i18n="nav.contacts">Kontaktlar</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Til / Язык">
+        <button type="button" data-lang="uz" onclick="nmcSetLang('uz')">UZ</button>
+        <button type="button" data-lang="ru" onclick="nmcSetLang('ru')">RU</button>
+      </div>
+      <a href="kontaktlar.html#form" class="btn btn--primary btn--small header-cta" data-i18n="nav.cta">Qabulga yozilish</a>
+      <button class="burger" id="burger-btn" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-bar">
+  <a href="tel:+998993070300" class="mobile-bar__item mobile-bar__item--call">
+    <span class="icon" data-icon="phone" style="width:18px;height:18px" aria-hidden="true"></span>
+    <span data-i18n="cta.call">Qo'ng'iroq qilish</span>
+  </a>
+  <a href="https://t.me/neomedcardioclinicbot" target="_blank" rel="noopener" class="mobile-bar__item mobile-bar__item--tg">
+    <span class="icon" data-icon="telegram" style="width:18px;height:18px" aria-hidden="true"></span>
+    <span data-i18n="cta.telegram">Telegram orqali yozilish</span>
+  </a>
+</div>

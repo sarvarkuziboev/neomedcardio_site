@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontaktlar — Neo Med Cardio</title>
+<meta name="description" content="Neo Med Cardio klinikasi bilan bog'lanish: manzil, telefon, ish vaqti va qabulga yozilish formasi.">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="kontaktlar">
+
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div class="eyebrow" data-i18n="contacts.hero.eyebrow">Bog'lanish</div>
+        <h1 data-i18n="contacts.hero.title">Biz bilan bog'laning</h1>
+        <p data-i18n="contacts.hero.desc">Savollaringiz bormi yoki qabulga yozilmoqchimisiz? Quyidagi usullardan birini tanlang.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts-grid container" id="form">
+
+    <div data-reveal>
+      <div class="info-list">
+        <div class="info-item">
+          <div class="info-item__icon"><span class="icon" data-icon="map-pin" style="width:20px;height:20px" aria-hidden="true"></span></div>
+          <div>
+            <h4 data-i18n="contacts.address.title">Manzil</h4>
+            <p data-i18n="contacts.address.value">Toshkent, Chilonzor tumani, Katta Qo'zirobod ko'chasi, 71</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-item__icon"><span class="icon" data-icon="phone" style="width:20px;height:20px" aria-hidden="true"></span></div>
+          <div>
+            <h4 data-i18n="contacts.phone.title">Telefon</h4>
+            <a href="tel:+998993070300">+998 99 307 03 00</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-item__icon"><span class="icon" data-icon="clock" style="width:20px;height:20px" aria-hidden="true"></span></div>
+          <div>
+            <h4 data-i18n="contacts.hours.title">Ish vaqti</h4>
+            <p data-i18n="contacts.hours.value">Poliklinika: Dush–Shan 09:00–18:00 · Statsionar: 24/7</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-item__icon"><span class="icon" data-icon="telegram" style="width:20px;height:20px" aria-hidden="true"></span></div>
+          <div>
+            <h4 data-i18n="contacts.social.title">Ijtimoiy tarmoqlar</h4>
+            <p>
+              <a href="https://t.me/neomedcardio_uz" target="_blank" rel="noopener">Telegram</a> ·
+              <a href="https://www.instagram.com/neomedcardio/" target="_blank" rel="noopener">Instagram</a> ·
+              <a href="https://www.facebook.com/neomedcardio.uz" target="_blank" rel="noopener">Facebook</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-frame">
+        <iframe
+          src="https://yandex.uz/map-widget/v1/?ll=69.253700%2C41.290700&z=15&pt=69.253700,41.290700,pm2rdm"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Neo Med Cardio — xarita"></iframe>
+      </div>
+    </div>
+
+    <div data-reveal data-reveal-delay="120">
+      <div class="contact-form-card">
+        <h3 data-i18n="contacts.form.title">Yozilish uchun ariza qoldiring</h3>
+        <p data-i18n="contacts.form.desc">Formani to'ldiring, administratorimiz tez orada siz bilan bog'lanadi.</p>
+
+        <div class="form-success" id="form-success">
+          <span class="icon" data-icon="check" style="width:18px;height:18px" aria-hidden="true"></span>
+          <span>Telegram bot ochildi — arizangizni shu yerda tasdiqlang.</span>
+        </div>
+
+        <form id="contact-form">
+          <div class="field">
+            <label for="f-name" data-i18n="contacts.form.name">Ismingiz</label>
+            <input type="text" id="f-name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="f-phone" data-i18n="contacts.form.phone">Telefon raqamingiz</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="+998 ​9_ ___ __ __" required>
+          </div>
+          <div class="field">
+            <label for="f-service" data-i18n="contacts.form.service">Qaysi yo'nalish qiziqtiradi?</label>
+            <select id="f-service" name="service">
+              <option>Kardiologiya</option>
+              <option>Pulmonologiya</option>
+              <option>Diagnostika (MRT/MSKT)</option>
+              <option>Statsionar</option>
+              <option>Boshqa</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-message" data-i18n="contacts.form.message">Qo'shimcha izoh (ixtiyoriy)</label>
+            <textarea id="f-message" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" data-i18n="contacts.form.submit">Yuborish</button>
+          <p class="form-note" data-i18n="contacts.form.note">Ariza yuborilgach, Telegram bot orqali tasdiqlang — shunda tezroq javob olasiz.</p>
+        </form>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
