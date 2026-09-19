@@ -42,6 +42,10 @@ const NMC_DICT = {
     "hero.stat.3.label": "reanimatsiya va tez yordam",
     "hero.stat.4.label": "davolangan bemor",
     "hero.trust.sub": "7+ mutaxassis xizmatingizda",
+    "chip.1.title": "Reanimatsiya",
+    "chip.1.sub": "24 soat nazorat",
+    "chip.2.title": "MRT / MSKT",
+    "chip.2.sub": "bir kunda natija",
     "hero.rating.sub": "Yandex · 729 ta baho",
 
     /* ---------- marquee / hamkorlik ---------- */
@@ -158,7 +162,7 @@ const NMC_DICT = {
     "contacts.form.service": "Qaysi yo'nalish qiziqtiradi?",
     "contacts.form.message": "Qo'shimcha izoh (ixtiyoriy)",
     "contacts.form.submit": "Yuborish",
-    "contacts.form.note": "Ariza yuborilgach, Telegram bot orqali tasdiqlang — shunda tezroq javob olasiz.",
+    "contacts.form.note": "Ariza yuborilgach, administratorlarimiz tez orada siz bilan bog'lanadi.",
     "contacts.map.title": "Xaritada joylashuv",
   },
 
@@ -199,6 +203,10 @@ const NMC_DICT = {
     "hero.stat.3.label": "реанимация и скорая помощь",
     "hero.stat.4.label": "пролеченных пациентов",
     "hero.trust.sub": "7+ специалистов к вашим услугам",
+    "chip.1.title": "Реанимация",
+    "chip.1.sub": "круглосуточный контроль",
+    "chip.2.title": "МРТ / МСКТ",
+    "chip.2.sub": "результат за один день",
     "hero.rating.sub": "Яндекс · 729 оценок",
 
     /* ---------- партнёрство ---------- */
@@ -315,7 +323,7 @@ const NMC_DICT = {
     "contacts.form.service": "Какое направление интересует?",
     "contacts.form.message": "Комментарий (необязательно)",
     "contacts.form.submit": "Отправить",
-    "contacts.form.note": "После отправки подтвердите заявку через Telegram-бот — так вы получите более быстрый ответ.",
+    "contacts.form.note": "После отправки заявки наши администраторы свяжутся с вами в ближайшее время.",
     "contacts.map.title": "Расположение на карте",
   }
 };

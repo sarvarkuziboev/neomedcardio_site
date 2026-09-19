@@ -27,7 +27,7 @@ neomedcardio-site/
 ## Nimalarni albatta almashtirish/tekshirish kerak
 
 - [ ] **Narxlar** — `xizmatlar.html` ichidagi narxlar taxminiy. Har birini klinika bilan aniqlashtiring.
-- [ ] **Telegram bot havolasi** — hozir `https://t.me/neomedcardioclinicbot` ishlatilgan, forma ham shu botga yo'naltiradi.
+- [ ] **Telegram bot havolasi** — `https://t.me/neomedcardioclinicbot` hali header/footer va "Telegram orqali yozilish" tugmalarida ishlatiladi. Kontaktlar formasi endi botga yo'naltirmaydi — ariza to'g'ridan-to'g'ri admin panelga (`admin/`) saqlanadi, qarang `DEPLOY.md`.
 - [ ] **Xarita** — `kontaktlar.html` ichidagi Yandex xarita koordinatalari (`ll=69.2537,41.2907`) — klinikaning aniq joylashuviga moslab sozlang (Yandex/Google Maps'dan "share/embed" havolasini oling).
 - [ ] **Pochta manzili** — footer'dagi `info@neomedcardio.uz` — agar haqiqiy pochta bo'lsa, shuni qo'ying.
 - [ ] **Shifokorlar** — hozir Instagram/Telegramdan olingan 7 ta rasm ishlatilgan. Qolgan shifokorlar (LOR, pediatr, endokrinolog va h.k.) rasmi kelsa, xuddi shu namunada `shifokorlar.html` ga qo'shiladi.

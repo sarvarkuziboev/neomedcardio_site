@@ -271,7 +271,7 @@
   }
 
   /* ---------------------------------------------------------------------
-     7) Contact forma (front-end demo — Telegramga yo'naltiradi)
+     7) Contact forma — admin panel bazasiga saqlaydi
   --------------------------------------------------------------------- */
   function initContactForm() {
     const form = document.getElementById("contact-form");
@@ -282,15 +282,33 @@
       const phone = form.querySelector("#f-phone").value.trim();
       const service = form.querySelector("#f-service").value;
       const msg = form.querySelector("#f-message").value.trim();
+      const website = form.querySelector("#f-website") ? form.querySelector("#f-website").value : "";
 
-      const text = `Salom! Ismim: ${name}. Tel: ${phone}. Yo'nalish: ${service}. ${msg ? "Izoh: " + msg : ""}`;
-      const tgUrl = "https://t.me/neomedcardioclinicbot?start=" + encodeURIComponent(text.slice(0, 60));
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
 
-      const successBox = document.getElementById("form-success");
-      if (successBox) successBox.classList.add("is-visible");
-      form.reset();
-
-      window.open(tgUrl, "_blank");
+      fetch("api/submit.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, phone, service, message: msg, website }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.ok) {
+            const successBox = document.getElementById("form-success");
+            if (successBox) successBox.classList.add("is-visible");
+            form.reset();
+          } else {
+            alert("Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring yoki qo'ng'iroq qiling.");
+          }
+        })
+        .catch((err) => {
+          console.error("Zayavkani saqlashda xatolik:", err);
+          alert("Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring yoki qo'ng'iroq qiling.");
+        })
+        .finally(() => {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 

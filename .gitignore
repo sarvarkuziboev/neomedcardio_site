@@ -1,0 +1,2 @@
+# Real database credentials — never commit, fill in per-environment on the server
+neomedcardio-site/includes/config.php
